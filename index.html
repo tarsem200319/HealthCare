@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthcare Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<tbody>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">
+      <img src="best.png">
+    </div>
+
+    <ul class="menu">
+      <li><img src="h.png">Overview</li>
+      <button> <img src="p.png"> Patients</button>
+      <li><img src="s.png">Schedule</li>
+      <li><img src="m.png">Message</li>
+      <li><img src="t.png">Transactions</li>
+
+      <div class="nav-profile">
+        <img src="bests.png">
+        <div class="text">
+          <h4>Dr. Jose Simmons</h4>
+          <p>General Practitioner</p>
+        </div>
+        <img src="stt.png">
+        <img src="dots.png">
+      </div>
+    </ul>
+  </div>
+
+
+  <!-- Main Layout -->
+  <div class="container">
+    <!-- LEFT SIDEBAR -->
+    <div class="slidebar">
+      <div class="patient-list">
+        <div class="slidebar-header">
+          <h3>Patients</h3>
+          <img src="sea.png">
+        </div>
+
+        <!-- Patient Items -->
+        <div class="patient-item">
+          <img src="emily.png">
+          <div class="patient-info">
+            <h4>Emily Williams</h4>
+            <p>Female, 18</p>
+            <div class="dot"><img src="linedot.png"></div>
+          </div>
+        </div>
+
+        <div class="patient-item">
+          <img src="ryan.png">
+          <div class="patient-info">
+            <h4>Ryan Johnson</h4>
+            <p>Male, 45</p>
+            <div class="dot"><img src="linedot.png"></div>
+          </div>
+        </div>
+
+        <div class="patient-item">
+          <img src="brandon.png">
+          <div class="patient-info">
+            <h4>Brandon Mitchell</h4>
+            <p>Male, 35</p>
+            <div class="dot"><img src="linedot.png"></div>
+          </div>
+        </div>
+
+        <div class="patient-item active">
+          <img src="jassica.png">
+          <div class="patient-info">
+            <h4>Jassica Tylor</h4>
+            <p>Female, 28</p>
+            <div class="dot"><img src="linedot.png"></div>
+          </div>
+        </div>
+
+        <div class="patient-item">
+          <img src="samantha.png">
+          <div class="patient-info">
+            <h4>Samantha Johhnson</h4>
+            <p>Female, 56</p>
+            <div class="dot"><img src="linedot.png"></div>
+          </div>
+        </div>
+
+        <div class="patient-item">
+          <img src="ashley.png">
+          <div class="patient-info">
+            <h4>Ashley Martinez</h4>
+            <p>Female, 54</p>
+            <div class="dot"><img src="linedot.png"></div>
+          </div>
+        </div>
+
+        <div class="patient-item">
+          <img src="olivia.png">
+          <div class="patient-info">
+            <h4>Oliva Brown</h4>
+            <p>Female, 54</p>
+            <div class="dot"><img src="linedot.png"></div>
+          </div>
+        </div>
+
+        <div class="patient-item">
+          <img src="emily.png">
+          <div class="patient-info">
+            <h4>Emily Williams</h4>
+            <p>Female, 18</p>
+            <div class="dot"><img src="linedot.png"></div>
+          </div>
+        </div>
+
+        <div class="patient-item">
+          <img src="tyler.png">
+          <div class="patient-info">
+            <h4>Tyler Davia</h4>
+            <p>Male, 19</p>
+            <div class="dot"><img src="linedot.png"></div>
+          </div>
+        </div>
+
+        <div class="patient-item">
+          <img src="kevin.png">
+          <div class="patient-info">
+            <h4>Kevin Anderson</h4>
+            <p>Male, 30</p>
+            <div class="dot"><img src="linedot.png"></div>
+          </div>
+        </div>
+
+        <div class="patient-item">
+          <img src="dylan.png">
+          <div class="patient-info">
+            <h4>Dylan Thompson</h4>
+            <p>Male, 36</p>
+            <div class="dot"><img src="linedot.png"></div>
+          </div>
+        </div>
+
+        <div class="patient-item">
+          <img src="nathan..png">
+          <div class="patient-info">
+            <h4>Nathan Evans</h4>
+            <p>Male, 58</p>
+            <div class="dot"><img src="linedot.png"></div>
+          </div>
+        </div>
+
+        <div class="patient-item">
+          <img src="mike.png">
+          <div class="patient-info">
+            <h4>Mike Nolan</h4>
+            <p>Male, 31</p>
+            <div class="dot"><img src="linedot.png"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- CENTER -->
+      <div class="bp-rightss">
+        <h2>Diagnostic History</h2>
+
+
+        <div class="content">
+          <h3>Blood Pressure</h3>
+          <p>Last 6 months<i class="fa-solid fa-angle-down"></i></p>
+          <canvas id="bpChart"></canvas>
+        </div>
+      </div>
+
+
+      <div class="bp-left">
+        <h4 class="systolic">Systolic</h4>
+        <h2>160</h2>
+        <p><i class="fa-solid fa-caret-up"></i>Higher than Average</p>
+
+        <h4 class="diasto">Diastolic</h4>
+        <h2>78</h2>
+        <p><i class="fa-solid fa-caret-down"></i>Lower than Average</p>
+      </div>
+
+
+
+      <div class="right-sidebar">
+
+        <div class="profile-card">
+
+          <img src="jassica.png" alt="profile" class="profile-main-img">
+
+          <div class="profile-details">
+            <h2>Jessica Taylor</h2>
+
+            <div class="info">
+              <img src="dd.png" class="icon">
+              <div class="card-info">
+                <p>Date of Birth</p>
+                <span>August 23, 1996</span>
+              </div>
+            </div>
+
+            <div class="info">
+              <img src="g.png" class="icon">
+              <div class="card-info">
+                <p>Gender</p>
+                <span>Female</span>
+              </div>
+            </div>
+
+            <div class="info">
+              <img src="ci.png" class="icon">
+              <div class="card-info">
+                <p>Contact Info</p>
+                <span>(415) 555-1234</span>
+              </div>
+            </div>
+
+            <div class="info">
+              <img src="ci.png" class="icon">
+              <div class="card-info">
+                <p>Emergency Contact</p>
+                <span>(415) 555-5678</span>
+              </div>
+            </div>
+
+            <div class="info">
+              <img src="ip.png" class="icon">
+              <div class="card-info">
+                <p>Insurance Provider</p>
+                <span>Sunrise Health Assurance</span>
+              </div>
+            </div>
+          </div>
+
+          <button class="show-btn">Show All Information</button>
+
+        </div>
+      </div>
+
+      <!-- Lab Results -->
+      <div class="diagnostic-box">
+
+        <div class="labresult">
+
+          <h3>Lab Results</h3>
+
+          <div class="lab-table">
+
+
+
+            <div class="lab-row">
+              <span>Blood Tests</span>
+              <img src="dl.png" alt="download">
+            </div>
+
+            <div class="lab-row">
+              <span>CT Scans</span>
+              <img src="dl.png" alt="download">
+            </div>
+
+            <div class="lab-row">
+              <span>Radiology Reports</span>
+              <img src="dl.png" alt="download">
+            </div>
+
+            <div class="lab-row">
+              <span>X-Rays</span>
+              <img src="dl.png" alt="download">
+            </div>
+
+            <div class="lab-row">
+              <span>Urine Test</span>
+              <img src="dl.png" alt="download">
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="cards">
+      <div class="card-green">
+        <img src="bp.png">
+        <p>Respiratory Rate</p>
+        <h2>20 bpm</h2>
+        <span>Normal</span>
+      </div>
+
+      <div class="card-orange">
+        <img src="tt.png">
+        <p>Temperature</p>
+        <h2>98.6°F</h2>
+        <span>Normal</span>
+      </div>
+
+      <div class="card-pink">
+        <img src="hh.png">
+        <p>Heart Rate</p>
+        <h2>78 bpm</h2>
+        <span>Lower than Average</span>
+      </div>
+    </div>
+
+
+    <div class="bp-box">
+      <!-- Diagnostic List -->
+      <div class="diagnostic">
+        <h2>Diagnostic List</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Problem/Diagnostic</th>
+              <th>Description</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Hypertension</td>
+              <td>Chronic high blood pressure</td>
+              <td class="status observation">Under Observation</td>
+            </tr>
+
+            <tr>
+              <td>Type 2 Diabetes</td>
+              <td>Insulin resistance and elevated blood sugar</td>
+              <td class="status cured">Cured</td>
+            </tr>
+
+            <tr>
+              <td>Asthma</td>
+              <td>Recurrent episodes of bronchial constriction</td>
+              <td class="status inactive">Inactive</td>
+            </tr>
+
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+      const ctx = document.getElementById('bpChart');
+      new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ['Oct, 2023', 'Nov, 2023', 'Dec, 2023', 'Jan, 2024', 'Feb, 2024', 'Mar, 2024'],
+          datasets: [
+            {
+              label: 'Systolic',
+              data: [120, 115, 160, 110, 145, 160],
+              borderColor: '#d946ef',
+              tension: 0.4, 
+            },
+            {
+              label: 'Diastolic',
+              data: [110, 65, 105, 90, 70, 78],
+              borderColor: '#6366f1',
+              tension: 0.4
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          scales: {
+            y: {
+              min: 60,
+              max: 180,
+              ticks: {
+                stepSize: 20
+              }
+            }
+          }
+        }
+      });
+    </script>
+  </div>
+
+  </div>
+
+  </body>
+
+</html>
